@@ -34,6 +34,45 @@ body {
     }
 }
 
+.btn {
+    padding: 11px 35px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    border-radius: 30px;
+    border: 2px solid #f9bf29;
+
+    &.btn__hero {
+        color: #2f2f2f;
+        background: #f9bf29;
+        transition: 0.3s all;
+        &:hover {
+            background: darken(#f9bf29, 10);
+            color: #ffffff;
+            border: 2px solid darken(#f9bf29, 10);
+        }
+    }
+    &.btn__outline {
+        border: 2px solid rgba(255, 255, 255, 0.29);
+        color: #ffffff;
+        background: transparent;
+        transition: 0.3s all;
+        padding: 14px 35px;
+        &:hover {
+            background: #ffffff;
+            color: #2f2f2f;
+            border-color: #ffffff;
+        }
+    }
+    &.btn__section {
+        color: #ffffff;
+        background: #2f2f2f;
+    }
+}
+
 // Animations
 // Fade
 @keyframes fade {

@@ -1,6 +1,7 @@
 // ========================= [ Header styles ] =========================
 .header {
     background-color: #3b5d50;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.29);
 
     &.fixed {
         position: fixed;
@@ -20,7 +21,7 @@
     }
 }
 .logo {
-    z-index: 3;
+    z-index: 4;
 }
 
 // ========================== [ Menu styles ] ==========================
@@ -88,7 +89,7 @@
             pointer-events: all;
             justify-content: center;
             align-items: center;
-            z-index: 2;
+            z-index: 3;
             animation: fade 0.1s linear;
 
             .menu__item-link {
@@ -102,7 +103,7 @@
 .burger {
     display: none;
     background: transparent;
-    z-index: 3;
+    z-index: 4;
     @media screen and (max-width: $burgerBreakpoint) {
         display: flex;
         position: relative;

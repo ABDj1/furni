@@ -455,3 +455,63 @@
     }
   }
 }
+
+// Section Examples
+.section {
+  &__examples {
+    padding: 50px 0;
+  }
+}
+
+.examples {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  @media (max-width: $breakpoint992) {
+    flex-wrap: wrap;
+  }
+  &__item {
+    flex: 0 1 340px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @media (max-width: $breakpoint992) {
+      flex: 0 1 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__img {
+
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__name {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: #000000;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #6a6a6a;
+  }
+  &__link {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: #6a6a6a;
+    transition: 0.3s color;
+    &:hover {
+      color: #2f2f2f;
+    }
+  }
+}

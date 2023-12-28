@@ -341,3 +341,117 @@
     }
   }
 }
+
+// Section Help
+.section {
+  // .section__help
+  &__help {
+    padding: 70px 0 100px 0;
+    @media (max-width: $breakpoint768) {
+      padding: 0 0 50px 0;
+    }
+  }
+}
+
+.help {
+  display: flex;
+  justify-content: space-between;
+  gap: 55px;
+  @media (max-width: $breakpoint992) {
+    flex-wrap: wrap-reverse;
+  }
+  // .help__item
+  &__item {
+    @media (max-width: $breakpoint992) {
+      flex: 0 1 100%;
+    }
+      &.left {
+        // .left__item
+        &__item {
+          position: relative;
+          display: flex;
+          align-items: flex-start;
+          gap: 30px;
+          flex: 0 1 630px;
+          @media (max-width: $breakpoint992) {
+            display: flex;
+            flex: 0 1 100%;
+            flex-wrap: wrap;
+          }
+        }
+      }
+      &.right {
+      // .right__item
+      &__item {
+        @media (max-width: $breakpoint1200) {
+          flex: 0 1 100%;
+        }
+
+      }
+    }
+  }
+  &__img {
+  }
+  &__img-1 {
+    @media (max-width: $breakpoint768) {
+      max-width: 90%;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__img-2 {
+    @media (max-width: $breakpoint768) {
+      display: none;
+      //max-width: 100%;
+      //width: 40%;
+      //height: auto;
+      //position: absolute;
+      //top: 10%;
+      //right: 0;
+    }
+  }
+  &__img-3 {
+    position: absolute;
+    right: 0;
+    top: 43%;
+    @media (max-width: $breakpoint768) {
+      max-width: 40%;
+      width: 100%;
+      height: auto;
+      top: 5%
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+    @media (max-width: $breakpoint768) {
+      margin-top: 10px;
+      gap: 15px;
+    }
+    li {
+      position: relative;
+      padding-left: 22px;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 19px;
+      color: #6a6a6a;
+      flex: 0 1 215px;
+      @media (max-width: $breakpoint768) {
+        flex: 0 1 100%;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        border: 2px solid #3b5d50;
+        width: 8px;
+        height: 8px;
+        left: 0;
+        top: 6px;
+        border-radius: 100%;
+      }
+    }
+  }
+}

@@ -75,6 +75,7 @@ h6 {
 
 body {
   font-family: "Inter", sans-serif;
+  background: #eff2f1;
 }
 
 body.locked {
@@ -722,6 +723,89 @@ body.dark {
 .slider__btn.next__btn {
   top: 30px;
   right: 0;
+}
+
+.section__blog {
+  padding-bottom: 150px;
+}
+
+.blog {
+  margin-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.blog__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog__link {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+  color: #2F2F2F;
+  border-bottom: 3px solid #000000;
+  -webkit-transition: 0.3s border, color;
+  -o-transition: 0.3s border, color;
+  transition: 0.3s border, color;
+}
+
+.blog__link:hover {
+  border-color: #3b5d50;
+  color: #3b5d50;
+}
+
+.blog__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 360px;
+          flex: 0 1 360px;
+}
+
+.blog__img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog__img img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.blog__title {
+  margin-top: 44px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: #2F2F2F;
+}
+
+.blog__info {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  text-align: left;
+  color: #2F2F2F;
+}
+
+.blog__info span {
+  font-style: italic;
+  font-weight: 400;
 }
 
 /**
@@ -1748,6 +1832,12 @@ button.swiper-pagination-bullet {
     top: unset;
     bottom: -29px;
   }
+
+  .blog__title {
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1768,7 +1858,7 @@ button.swiper-pagination-bullet {
 
   .section__title {
     line-height: 1.3;
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .section__text {
@@ -1882,6 +1972,22 @@ button.swiper-pagination-bullet {
   }
 
   .help__list li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .blog {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .blog__link {
+    border-bottom: 2px solid #000000;
+    font-size: 14px;
+  }
+
+  .blog__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;

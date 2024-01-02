@@ -1,4 +1,130 @@
 // Footer
 footer {
-    display: block;
+    background: #ffffff;
+    padding: 32px;
+}
+.footer {
+    display: flex;
+    gap: 60px;
+    @media (max-width: $breakpoint992) {
+        gap: 30px;
+    }
+    @media (max-width: $breakpoint768) {
+        flex-wrap: wrap;
+    }
+    &__logo {
+        margin-bottom: 17px;
+        display: flex;
+    }
+    &__item {
+        &.left__item {
+            flex: 0 1 360px;
+            @media (max-width: $breakpoint768) {
+                flex: 0 1 100%;
+            }
+        }
+        &.right__item {
+            display: flex;
+            gap: 50px;
+            @media (max-width: $breakpoint992) {
+                gap: 30px;
+            }
+            @media (max-width: $breakpoint768) {
+                flex: 0 1 100%;
+            }
+            @media (max-width: $breakpoint480) {
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+        }
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #6A6A6A;
+    }
+    &__link {}
+}
+.social {
+    display: flex;
+    gap: 11px;
+    margin-top: 50px;
+    @media (max-width: $breakpoint768) {
+        margin-top: 20px;
+    }
+    &__item {
+        a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            background: #d9d9d9;
+            transition: .3s background;
+        }
+        svg {
+            transition: .3s scale;
+            path {
+                transition: .3s fill;
+            }
+        }
+
+        &:hover {
+            a {
+                background: #385D50;
+            }
+            svg {
+                scale: 1.1;
+            }
+            path {
+                fill: #ffffff;
+            }
+        }
+    }
+}
+.links {
+    @media (max-width: $breakpoint768) {
+        flex: 0 1 20%;
+    }
+    @media (max-width: $breakpoint480) {
+        flex: 0 1 45%;
+    }
+    a {
+        line-height: 28px;
+        transition: .3s color;
+        &:hover {
+            color: #385D50;
+        }
+    }
+}
+.copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 36px;
+    border-top: 1px solid #eff2f1;
+    margin-top: 32px;
+    @media (max-width: $breakpoint768) {
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 42px;
+    }
+    &__link {
+        transition: .3s color;
+        &:hover {
+            color: #385D50;
+        }
+    }
+    &__text {
+        @media (max-width: $breakpoint480) {
+            display: block;
+        }
+    }
 }
